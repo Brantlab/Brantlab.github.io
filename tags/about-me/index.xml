@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About Me on Justin Brant</title>
+    <link>http://localhost:1313/tags/about-me/</link>
+    <description>Recent content in About Me on Justin Brant</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 31 May 2018 07:11:59 +0700</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/about-me/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Who Am I?</title>
+      <link>http://localhost:1313/about_me/me/</link>
+      <pubDate>Thu, 31 May 2018 07:11:59 +0700</pubDate>
+      
+      <guid>http://localhost:1313/about_me/me/</guid>
+      <description>The Professional Story Over 12 years in IT doing various jobs all the way from Helpdesk to IT Systems Administrator over a VMware Infrastructure. I have worked for small Mom &amp;amp; Pop shops all the way up to the big fruit company. Over the years I have developed an awesome set of skills and a great collection of random knowledge but the thing I took away from every job/Client site that I have been at is the ability to step back and do logical problem solving.</description>
+    </item>
+    
+  </channel>
+</rss>

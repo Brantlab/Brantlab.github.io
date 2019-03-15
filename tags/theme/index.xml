@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Theme on Justin Brant</title>
+    <link>http://localhost:1313/tags/theme/</link>
+    <description>Recent content in Theme on Justin Brant</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 31 May 2018 07:11:59 +0700</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/theme/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting Started with AMP</title>
+      <link>http://localhost:1313/amp/getting-started/</link>
+      <pubDate>Thu, 31 May 2018 07:11:59 +0700</pubDate>
+      
+      <guid>http://localhost:1313/amp/getting-started/</guid>
+      <description>Getting started with AMP Implement these key steps to get up and running with AMP:
+ Create your AMP pages Validate your AMP pages Make your content discoverable  Using AMP day-to-day Keep your AMP momentum going with all the resources AMP has to offer.
+Create your AMP pages See the relevant sections below for: using a CMS, starting from scratch, or converting existing content</description>
+    </item>
+    
+    <item>
+      <title>Getting Started With Hugo</title>
+      <link>http://localhost:1313/hugo/getting-started/</link>
+      <pubDate>Mon, 28 May 2018 13:22:14 +0700</pubDate>
+      
+      <guid>http://localhost:1313/hugo/getting-started/</guid>
+      <description>Step 1: Install Hugo brew install hugo  To verify your new install:
+hugo version  Step 2: Create a New Site hugo new site quickstart  The above will create a new Hugo site in a folder named quickstart.
+Step 3: Add a Theme See themes.gohugo.io for a list of themes to consider. This quickstart uses the beautiful Ananke theme.
+cd quickstart;\ git init;\ git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke;\ # Edit your config.</description>
+    </item>
+    
+  </channel>
+</rss>
