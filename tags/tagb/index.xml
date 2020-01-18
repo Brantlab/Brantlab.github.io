@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tagB on BrantLab</title>
+    <link>https://brantlab.com/tags/tagb/</link>
+    <description>Recent content in tagB on BrantLab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 06 Sep 2019 14:19:13 -0400</lastBuildDate>
+    
+	<atom:link href="https://brantlab.com/tags/tagb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Who Am I?</title>
+      <link>https://brantlab.com/post/whoami/</link>
+      <pubDate>Fri, 06 Sep 2019 14:19:13 -0400</pubDate>
+      
+      <guid>https://brantlab.com/post/whoami/</guid>
+      <description>The Professional Story Over 12 years in IT doing various jobs all the way from Helpdesk to IT Systems Administrator over a VMware Infrastructure. I have worked for small Mom &amp;amp; Pop shops all the way up to the big fruit company. Over the years I have developed an awesome set of skills and a great collection of random knowledge but the thing I took away from every job/Client site that I have been at is the ability to step back and do logical problem solving.</description>
+    </item>
+    
+  </channel>
+</rss>
