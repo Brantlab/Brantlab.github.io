@@ -18,7 +18,7 @@ On April 19th I gave a presentation to Fort Wayne VMUG around N8N and my current
 Source ChatGPT
 
 ## What do I really use it for? 
-My specific use cases were essentially what I will call API Translation. We use a program in our infrastructure that sends alerts via webhook. This is great we can integrate this into our chat system! Yay no email white noise from this. Let work through that and see what I can break along the way.
+My specific use cases were essentially what I will call API Translation. We use a program in our infrastructure that sends alerts via webhook. This is great we can integrate this into our chat system! Yay no email white noise from this. Let’s work through that and see what I can break along the way.
 
 ## Webhook JSON 
 We configure our webhook and our chat system wants a specific layout when it comes to that request. We lay out the request to look something like this.  
