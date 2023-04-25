@@ -4,7 +4,7 @@ author: "Justin Brant"
 # cover: "/img/cover.jpg"
 tags: ["VMUG"]
 date: 2023-04-19T14:19:13-04:00
-draft: true
+draft: false
 ---
 
 ## Back in the saddle
@@ -33,6 +33,15 @@ Everything looks like normal JSON and using postman to test this works swimmingl
 
 ## Wait.... Wheres the content-type?
 Neat found our first bug going from this applicaiton to our chat system. It gives some generic message about missing data but no real reason why. After some digging using the site https://webhook.site/ which is super neato and you should give it a look. I determined that when we put our custom JSON in vs leaving the custom field blank it rips the `content-type = application/json` out of the header. Well this is awkward. If we stick with basic no formatting the content won't make it to chat and if we get it in the right format then its missing content-type with no way to add it back into the header. This is where N8N comes in. 
+
+## Lets setup N8N to fix this
+
+`docker run -it --rm --name n8n -p 5678:5678 -v ~/.n8n:/home/node/.n8n docker.n8n.io/n8nio/n8n`
+
+{{< figure src="/img/easy-button.jpeg" width=95% layout="responsive" >}}
+
+
+
 
 
 
