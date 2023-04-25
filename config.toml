@@ -1,0 +1,44 @@
+baseURL = "https://brantlab.com"
+title = "Justin Brant"
+theme = "hugo-lamp"
+paginate = 5
+googleAnalytics = "UA-156514375-1" 
+
+[params]
+
+ logo = "/img/avatar.jpg"
+ subtitle = "Typical Geek, Virtualization Enthusiast, Fort Wayne VMUG Leader, and #vExpert"
+
+   # SEO configs
+  seotitle = "BrantLab - Blog"
+
+ # Social networks
+ email = "Justin@brantlab.com"
+ github = "Brantlab"
+ twitter = "JustinBrant93"
+ linkedin = "justinbrant"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[[menu.main]]
+  name = "About Me"
+  weight = 1
+  identifier = "About Me"
+  url = "/tags/about-me/"
+[[menu.main]]
+  name = "HomeLab"
+  weight = 2
+  identifier = "HomeLab"
+  url = "/tags/HomeLab/"
+[[menu.main]]
+  name = "Power_Something"
+  weight = 3
+  identifier = "Power_Something"
+  url = "/tags/Power_Something/"
+  [[menu.main]]
+  name = "VMUG"
+  weight = 3
+  identifier = "VMUG"
+  url = "/tags/VMUG/"
