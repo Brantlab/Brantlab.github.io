@@ -3,7 +3,7 @@ title = "Justin Brant"
 theme = "hugo-lamp"
 paginate = 5
 
-googleAnalytics = "UA-156514375-1"
+# googleAnalytics = "UA-156514375-1"
 
 # Google Analytics 4
 googleAnalyticsID = "G-PW5S5VF7TL"
