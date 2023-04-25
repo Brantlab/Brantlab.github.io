@@ -2,9 +2,9 @@
 title: "Intro to N8N"
 author: "Justin Brant"
 # cover: "/img/cover.jpg"
-tags: ["VMUG"]
+tags: ["VMUG", "Automation"]
 date: 2023-04-19T14:19:13-04:00
-draft: true
+draft: false
 ---
 
 ## Back in the saddle
@@ -38,10 +38,12 @@ Neat found our first bug going from this applicaiton to our chat system. It give
 
 `docker run -it --rm --name n8n -p 5678:5678 -v ~/.n8n:/home/node/.n8n docker.n8n.io/n8nio/n8n`
 
-{{< figure src="/img/easy-button.jpeg" width=95% layout="responsive" >}}
+{{< figure src="/img/easy-button.jpeg" width=25% layout="responsive" >}}
 
+Seriously there is more to this but this stands up the service then you can go along to http://whateverDockerIPis.com:5678 and it will walk you through the setup. It is pretty simple to setup account and you will be good to go. 
 
+## Ok so what now?
 
+Once logged in we are going to create our first workflow. This is really simple as well. You should be noticing this should simplify life and not make it harder. 
 
-
-
+{{< figure src="/img/N8N/createwf.gif" width=25% layout="responsive" >}}
