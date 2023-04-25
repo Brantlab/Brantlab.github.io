@@ -5,13 +5,15 @@ paginate = 5
 
 # googleAnalytics = "UA-156514375-1"
 
-# Google Analytics 4
-googleAnalyticsID = "G-PW5S5VF7TL"
 
 [params]
 
  logo = "/img/avatar.jpg"
  subtitle = "Typical Geek, Virtualization Enthusiast, Fort Wayne VMUG Leader, and #vExpert"
+
+ # Google Analytics 4
+ googleAnalyticsID = "G-PW5S5VF7TL"
+
 
  # SEO configs
  seotitle = "BrantLab - Blog"

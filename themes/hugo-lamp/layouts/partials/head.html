@@ -7,9 +7,6 @@
   <meta name="author" content="{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}" />
   <meta name="description" content="{{ $description | plainify }}">
 
-{{ if .Site.Params.GoogleAnalyticsID }}
-  {{ partial "analytics-gtag.html" . }}
-{{ end }}
 
 
   <!-- Twitter Card -->
