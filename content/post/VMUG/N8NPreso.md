@@ -4,7 +4,7 @@ author: "Justin Brant"
 # cover: "/img/cover.jpg"
 tags: ["VMUG"]
 date: 2023-04-19T14:19:13-04:00
-draft: false
+draft: true
 ---
 
 ## Back in the saddle
