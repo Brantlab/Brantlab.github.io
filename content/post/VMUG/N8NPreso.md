@@ -9,7 +9,7 @@ draft: false
 
 ## Back in the saddle
 
-On April 19th I gave a presentation to Fort Wayne VMUG around N8N and my current escapades down that rabbit hole of a automation framework. I have a devops mindset but wasn't sure where I was going with this application other than some specifc use cases which I will discuss later in this article. Lets jump into the "What is it?". 
+On April 19th I gave a presentation to Fort Wayne VMUG around N8N and my current escapades down that rabbit hole of a automation framework. I have a devops mindset but wasn't sure where I was going with this application other than some specifc use cases which I will discuss later in this article. Lets jump into the "What is it?".  
 
 ## What is it?
 
@@ -20,7 +20,7 @@ n8n is an open-source workflow automation tool that allows users to connect diff
 My specific use cases were essentially what I will call API Translation. We use a program in our infrastructure that sends alerts via webhook. This is great we can integrate this into our chat system! Yay no email white noise from this. Let work through that and see what I can break along the way.
 
 ## Webhook JSON 
-We configure our webhook and our chat system wants a specfic layout when it comes to that request. We lay out the request to look something like this. 
+We configure our webhook and our chat system wants a specfic layout when it comes to that request. We lay out the request to look something like this.  
 
 ``` json
 {
@@ -32,7 +32,7 @@ We configure our webhook and our chat system wants a specfic layout when it come
 Everything looks like normal JSON and using postman to test this works swimmingly. 
 
 ## Wait.... Wheres the content-type?
-Neat found our first bug going from this applicaiton to our chat system. It gives some generic message about missing data but no real reason why. After some digging using the site https://webhook.site/ which is super neato and you should give it a look. I determined that when we put our custom JSON in vs leaving the custom field blank it rips the `content-type = application/json` out of the header. Well this is awkward. If we stick with basic no formatting the content won't make it to chat and if we get it in the right format then its missing content-type with no way to add it back into the header. This is where N8N comes in. 
+Neat found our first bug going from this applicaiton to our chat system. It gives some generic message about missing data but no real reason why. After some digging using the site https://webhook.site/ which is super neato and you should give it a look. I determined that when we put our custom JSON in vs leaving the custom field blank it rips the `content-type = application/json` out of the header. Well this is awkward. If we stick with basic no formatting the content won't make it to chat and if we get it in the right format then its missing content-type with no way to add it back into the header. This is where N8N comes in.  
 
 ## Lets setup N8N to fix this
 
@@ -40,10 +40,14 @@ Neat found our first bug going from this applicaiton to our chat system. It give
 
 {{< figure src="/img/easy-button.jpeg" width=25% layout="responsive" >}}
 
-Seriously there is more to this but this stands up the service then you can go along to http://whateverDockerIPis.com:5678 and it will walk you through the setup. It is pretty simple to setup account and you will be good to go. 
+Seriously there is more to this but this stands up the service then you can go along to http://whateverDockerIPis.com:5678 and it will walk you through the setup. It is pretty simple to setup account and you will be good to go.  
 
 ## Ok so what now?
 
-Once logged in we are going to create our first workflow. This is really simple as well. You should be noticing this should simplify life and not make it harder. 
+Once logged in we are going to create our first workflow. This is really simple as well. You should be noticing this should simplify life and not make it harder.  
 
-{{< figure src="/img/N8N/createwf.gif" width=25% layout="responsive" >}}
+{{< figure src="/img/N8N/createwf.gif" width=50% layout="responsive" >}}
+
+Proceed with creating your first node by hitting the plus and select webhook call. 
+
+{{< figure src="/img/N8N/newnode.gif" width=50% layout="responsive" >}}
