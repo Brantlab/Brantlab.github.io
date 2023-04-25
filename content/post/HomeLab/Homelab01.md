@@ -47,3 +47,4 @@ After some recent gift from a friend. It has given me to motivation to sink some
 3. Determine viability of new drives or SAN of some kind (Open to suggestions)
    1. FreeNAS virtualized on main R710 host? 
    2. Storinator? 
+   3. Synology?
