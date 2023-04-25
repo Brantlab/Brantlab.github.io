@@ -68,7 +68,7 @@ Once that is created we have the options as listed in the screenshot. Lets work 
 
 ## Let get our first test data
 
-{{< figure src="/img/N8N/firstdata.png" width=50% layout="responsive" >}}
+{{< figure src="/img/N8N/firstdata.png" width=75% layout="responsive" >}}
 
 Ok so this is scrubbed because #Production but for our use case this is able to be used for this article. 
 
@@ -79,6 +79,49 @@ If we parse this data your going to say "Justin I thought you said your incoming
 I added a switch just as this is currently a growing project and wanted to have the ability to "filter" to a different step in the work flow. 
 
 {{< figure src="/img/N8N/layout.png" width=50% layout="responsive" >}}
-{{< figure src="/img/N8N/switchdata.png" width=50% layout="responsive" >}}
+{{< figure src="/img/N8N/switchdata.png" width=75% layout="responsive" >}}
 
 With this data into this 2nd node I am filtering locked account messages to go to output 1 and the rest or default to go out output 0 with no data modifications. 
+
+## 3rd Node
+
+Below is what I did with our data in the 3rd node. I moved the data around to fit what we wanted to deliver to our new webhook request into our chat system. This is a simple as dragging our various fields into our variable fields and they show up as `{{ $json.body.description }}` for example. 
+
+{{< figure src="/img/N8N/3rdnode(1).png" width=75% layout="responsive" >}}
+{{< figure src="/img/N8N/3rdnode(2).png" width=75% layout="responsive" >}}
+
+### This is the JSON in my variable field
+
+``` json
+{
+  "roomId": "The room ID", 
+  "markdown" : "Alert: {{ $json.body.description }} \n IP: {{ $json.body.remote_address }} \n Category: {{ $json.body.category }}"
+}
+```
+
+## The ultimate request
+
+``` json
+[
+  {
+    "id":"The ID",
+    "roomId":"The Room ID",
+    "roomType":"group",
+    "text":"Alert: Device Web Vault Edge is approved for user $User IP: Category: security",
+    "personId":"Person ID",
+    "personEmail":"something@email.com",
+    "markdown":"Alert: Device Web Vault Edge is approved for user IP: Category: security",
+    "html":"<p>Alert: Device Web Vault Edge is approved for user <br>IP:<br>Category: security</p>",
+    "created":"2023-04-22T16:10:56.056Z"
+  }
+]
+```
+
+### Profit!
+
+{{< figure src="/img/N8N/results.png" width=75% layout="responsive" >}}
+
+
+This has been an amazing rabbit hole and as I do more with it I will add to my blog the different things. This isn't even scratching the surface as there are thousands of use cases. 
+
+Check them out here https://n8n.io/
