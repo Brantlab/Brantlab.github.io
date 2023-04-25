@@ -87,8 +87,8 @@ With this data into this 2nd node I am filtering locked account messages to go t
 
 Below is what I did with our data in the 3rd node. I moved the data around to fit what we wanted to deliver to our new webhook request into our chat system. This is a simple as dragging our various fields into our variable fields and they show up as `{{ $json.body.description }}` for example. 
 
-{{< figure src="/img/N8N/3rdnode(1).png" width=75% layout="responsive" >}}
-{{< figure src="/img/N8N/3rdnode(2).png" width=75% layout="responsive" >}}
+{{< figure src="/img/N8N/3rdnode(1).png" layout="responsive" >}}
+{{< figure src="/img/N8N/3rdnode(2).png" layout="responsive" >}}
 
 ### This is the JSON in my variable field
 
@@ -119,7 +119,7 @@ Below is what I did with our data in the 3rd node. I moved the data around to fi
 
 ### Profit!
 
-{{< figure src="/img/N8N/results.png" width=75% layout="responsive" >}}
+{{< figure src="/img/N8N/results.png" layout="responsive" >}}
 
 
 This has been an amazing rabbit hole and as I do more with it I will add to my blog the different things. This isn't even scratching the surface as there are thousands of use cases. 
