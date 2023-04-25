@@ -3,7 +3,7 @@ title: "Intro to N8N"
 author: "Justin Brant"
 # cover: "/img/cover.jpg"
 tags: ["VMUG", "Automation"]
-date: 2023-04-25T14:19:13-04:00
+date: 2023-04-25
 draft: false
 ---
 
