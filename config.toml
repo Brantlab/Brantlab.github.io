@@ -37,8 +37,13 @@ googleAnalytics = "UA-156514375-1"
   weight = 3
   identifier = "Power_Something"
   url = "/tags/Power_Something/"
-  [[menu.main]]
+[[menu.main]]
   name = "VMUG"
   weight = 3
   identifier = "VMUG"
   url = "/tags/VMUG/"
+[[menu.main]]
+  name = "Automation"
+  weight = 1
+  identifier = "Automation"
+  url = "/tags/Automation/"
