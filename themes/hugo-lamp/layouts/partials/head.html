@@ -7,6 +7,11 @@
   <meta name="author" content="{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}" />
   <meta name="description" content="{{ $description | plainify }}">
 
+{{ if .Site.Params.GoogleAnalyticsID }}
+  {{ partial "analytics-gtag.html" . }}
+{{ end }}
+
+
   <!-- Twitter Card -->
   {{ if isset .Params "cover" }}
     <meta name="twitter:card" content="summary_large_image" />
