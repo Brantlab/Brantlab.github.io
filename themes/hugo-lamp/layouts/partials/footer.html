@@ -7,14 +7,11 @@
 
 {{ if .Site.GoogleAnalytics }}
 <amp-analytics type=googleanalytics>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PW5S5VF7TL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-PW5S5VF7TL');
-</script>
+  <script type=application/json>
+    {
+      "vars": { "account": {{ .Site.GoogleAnalytics }} },
+      "triggers": { "trackPageview": { "on": "visible", "request": "pageview" } }
+    }
+  </script>
 </amp-analytics>
 {{ end }}
