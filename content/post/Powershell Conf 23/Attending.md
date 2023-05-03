@@ -1,13 +1,13 @@
 ---
 title: "Attending Powershell Summit as a sysadmin"
 author: "Justin Brant"
-cover: "/img/ps-summit.png"
+# cover: "/img/ps-summit.png"
 tags: ["Automation"]
 date: 2023-04-27
 draft: false
 ---
 
-{{< figure src="/img/ps-summit.png" width=50% layout="responsive" >}}
+{{< figure src="/img/ps-summit.png" width=25% layout="responsive" >}}
 
 ## What did I get into?
 
