@@ -53,3 +53,8 @@ paginate = 5
   weight = 1
   identifier = "Automation"
   url = "/tags/Automation/"
+[[menu.main]]
+  name = "Conferences"
+  weight = 2
+  identifier = "Conferences"
+  url = "/tags/Conferences/"

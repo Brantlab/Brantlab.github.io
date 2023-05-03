@@ -2,7 +2,7 @@
 title: "Attending Powershell Summit as a sysadmin"
 author: "Justin Brant"
 # cover: "/img/ps-summit.png"
-tags: ["Automation"]
+tags: ["Conferences"]
 date: 2023-04-27
 draft: false
 ---
