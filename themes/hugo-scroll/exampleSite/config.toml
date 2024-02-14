@@ -9,7 +9,7 @@ defaultContentLanguage = "en"
 theme = "hugo-scroll"
 
 # The browser tab name
-title = "BrantLab IT"
+title = "Jane Doe - Nutrition Coach & Chef Consultant"
 
 # In order to add version information in the page's footer set to true.
 # enableGitInfo = true
@@ -18,7 +18,7 @@ title = "BrantLab IT"
 [params]
 
     # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
-    favicon = "images/logo_only.png"
+    favicon = "images/favicon.png"
 
     # These "images" are used for the structured data templates. This will show up, when
     # services like Twitter or Slack want to generate a preview of a link to your site.
@@ -35,18 +35,18 @@ title = "BrantLab IT"
     # Another "title" :-). This one is used as the site_name on the Hugo's internal
     # opengraph structured data template.
     # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
-    title = "Brantlab IT Consulting"
+    title = "Jane Doe - Nutrition Coach & Chef Consultant"
 
     # The "description" of your website. This is used in the meta data of your generated html.
-    description = "Your trusted consultant for the IT needs of your business"
+    description = "Nutrition Coach & Chef Consultant"
 
     # A "copyright"-line to be added at the bottom of the page.
     # Hint: Plain HTML is supported in here as well. So you may e.g. add a link to your legal imprint-page.
-    copyright = "© Brantlab"
+    copyright = "© Jane Doe"
 
     # This theme will, by default, inject a design-by-line at the bottom of the page.
     # You can turn it off, but we would really appreciate if you don’t :-)
-    hidedesignbyline = true
+    hidedesignbyline = false
 
     # The sections of the home page alternate styling. Mark invert as true to swap the styling of the sections
     invertSectionColors = false
@@ -59,5 +59,5 @@ title = "BrantLab IT"
         keywords = "some, keywords, for, seo, you, know, google, duckduckgo, and, such"
 
     [params.contact]
-        email = "Contact@brantlab.com"
-        phone = "Please email first"
+        email = "mail@janedoe.com"
+        phone = "+49 1111 555555"
