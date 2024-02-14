@@ -1,60 +1,63 @@
-baseURL = "https://brantlab.com"
-title = "Justin Brant"
-theme = "hugo-lamp"
-paginate = 5
+baseURL = "https://example.com"
 
-# googleAnalytics = "UA-156514375-1"
+# This is a "one page"-website, so we do not need these kinds of pages...
+disableKinds = ["section", "taxonomy", "term", "RSS", "robotsTXT"]
 
+defaultContentLanguage = "en"
 
+# The name of this wonderful theme ;-).
+theme = "hugo-scroll"
+
+# The browser tab name
+title = "BrantLab IT"
+
+# In order to add version information in the page's footer set to true.
+# enableGitInfo = true
+
+# Theme-specific variables `.Site.Params.myParamName`
 [params]
 
- logo = "/img/avatar.jpg"
- subtitle = "Husband, Father, Typical Geek, Virtualization Enthusiast, Fort Wayne VMUG Leader, #vExpert, Radio Connoisseur, EMT, and CERT Support. Sorry for my rambles in advance!"
+    # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
+    favicon = "images/logo_only.png"
 
- # Google Analytics 4
- googleAnalyticsID = "G-PW5S5VF7TL"
+    # These "images" are used for the structured data templates. This will show up, when
+    # services like Twitter or Slack want to generate a preview of a link to your site.
+    # See https://gohugo.io/templates/internal#twitter-cards and https://gohugo.io/templates/internal#open-graph.
+    # NOT the actual header background image, go to _index.md instead
+    images = ["images/cover-image.jpg"]
 
+    # When set true, it creates a visual guard (partially transparent rounded box), preventing non-ideal background images from interfering with title/description headings
+    # Ideal images are homogenous around the centre and contrasting to the text.
+    # see CSS classes: .title-and-description-guard, .blog-title, .blog-description
+    # see _index.md header_headline and header_subheadline
+    title_guard = false
 
- # SEO configs
- seotitle = "BrantLab - Blog"
+    # Another "title" :-). This one is used as the site_name on the Hugo's internal
+    # opengraph structured data template.
+    # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
+    title = "Brantlab IT Consulting"
 
- # Social networks
- email = "Justin@brantlab.com"
- github = "Brantlab"
- twitter = "JustinBrant93"
- linkedin = "justinbrant"
+    # The "description" of your website. This is used in the meta data of your generated html.
+    description = "Your trusted consultant for the IT needs of your business"
 
-[taxonomies]
-  tag = "tags"
-  category = "categories"
+    # A "copyright"-line to be added at the bottom of the page.
+    # Hint: Plain HTML is supported in here as well. So you may e.g. add a link to your legal imprint-page.
+    copyright = "© Brantlab"
 
-[[menu.main]]
-  name = "About Me"
-  weight = 1
-  identifier = "About Me"
-  url = "/tags/about-me/"
-[[menu.main]]
-  name = "HomeLab"
-  weight = 2
-  identifier = "HomeLab"
-  url = "/tags/HomeLab/"
-[[menu.main]]
-  name = "Power_Something"
-  weight = 3
-  identifier = "Power_Something"
-  url = "/tags/Power_Something/"
-[[menu.main]]
-  name = "VMUG"
-  weight = 3
-  identifier = "VMUG"
-  url = "/tags/VMUG/"
-[[menu.main]]
-  name = "Automation"
-  weight = 1
-  identifier = "Automation"
-  url = "/tags/Automation/"
-[[menu.main]]
-  name = "Conferences"
-  weight = 2
-  identifier = "Conferences"
-  url = "/tags/Conferences/"
+    # This theme will, by default, inject a design-by-line at the bottom of the page.
+    # You can turn it off, but we would really appreciate if you don’t :-)
+    hidedesignbyline = true
+
+    # The sections of the home page alternate styling. Mark invert as true to swap the styling of the sections
+    invertSectionColors = false
+    
+    [params.footer]
+    # Show contact icons for email/phone (if specified) in the footer of the page
+    showContactIcons = false
+
+    [params.meta]
+        keywords = "some, keywords, for, seo, you, know, google, duckduckgo, and, such"
+
+    [params.contact]
+        email = "Contact@brantlab.com"
+        phone = "Please email first"
