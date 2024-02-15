@@ -1,6 +1,6 @@
 ---
 title: "Submitting a Ticket"
-weight: 4
+weight: 3
 header_menu: true
 ---
 For streamlined assistance, initiating a support ticket is a straightforward process. Simply send an email to help@brantlab.com, and your account will be promptly generated. If you prefer to manage your requests online, you have the option to reset your password at {{<extlink text="helpdesk.brantlab.com" href="https://helpdesk.brantlab.com">}}. By doing so, you gain access to a user-friendly platform where you can view your tickets and monitor their status.
