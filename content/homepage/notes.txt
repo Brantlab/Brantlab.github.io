@@ -1,0 +1,1 @@
+{{<icon class="fa fa-phone">}}&nbsp;[{{<phone>}}](tel:{{<phone>}})
