@@ -12,4 +12,4 @@ Stay on top of your finances with real-time updates, view detailed breakdowns of
 
 Embrace the convenience of invoice.brantlab.com – where managing your invoices is as straightforward as the click of a button. Log in today to experience the future of invoice management!
 
-{{<extlink text="invoice.brantlab.com" href="https://invoice.brantlab.com">}}
+{{<extlink text="https://invoice.brantlab.com/client" href="https://invoice.brantlab.com/client">}}
