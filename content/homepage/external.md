@@ -2,5 +2,5 @@
 title: "Helpdesk"
 weight: 98
 header_menu: true
-external: https://helpdesk.brantlab.com
+external: https://portal.brantlab.com/client/login.php"
 ---
