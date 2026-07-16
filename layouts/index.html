@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Practical IT consulting, cybersecurity, cloud, infrastructure, and support for businesses in Northwest Ohio.">
+  <meta name="theme-color" content="#0b0b0d">
+  <meta property="og:title" content="Brantlab IT Consulting">
+  <meta property="og:description" content="Technology that works for your business—not the other way around.">
+  <meta property="og:image" content="{{ "assets/brantlab.png" | absURL }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <title>{{ .Site.Title }}</title>
+  <link rel="icon" href="{{ "assets/favicon-32x32.png" | relURL }}" sizes="32x32">
+  {{ $styles := resources.Get "css/styles.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+  {{ $scale := resources.Get "css/scale.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $scale.RelPermalink }}" integrity="{{ $scale.Data.Integrity }}">
+  {{ $script := resources.Get "js/script.js" | minify | fingerprint }}
+  <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-header>
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Brantlab home">
+        <img src="{{ "assets/logo-only.png" | relURL }}" alt="" width="46" height="46">
+        <span>BRANTLAB</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu>
+        <span class="sr-only">Open navigation</span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation" data-nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#support">Client support</a>
+        <a class="nav-cta" href="mailto:contact@brantlab.com">Start a conversation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Independent IT expertise · Northwest Ohio</p>
+          <h1>Technology that works for <em>your business.</em></h1>
+          <p class="hero-lede">Straightforward IT strategy, infrastructure, security, and support—designed around how your organization actually works.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="mailto:contact@brantlab.com">Let's talk <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#services">Explore services <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <img src="{{ "assets/logo-only.png" | relURL }}" alt="" width="288" height="288">
+          <span class="signal signal-one"></span><span class="signal signal-two"></span>
+          <span class="visual-label">STRATEGY / SECURITY / SUPPORT</span>
+        </div>
+      </div>
+      <div class="container proof-row reveal">
+        <div><strong>12+</strong><span>Years of IT experience</span></div>
+        <div><strong>Local</strong><span>Direct, personal service</span></div>
+        <div><strong>Practical</strong><span>Solutions without the jargon</span></div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> What I do</p>
+          <h2>Clear solutions for complex IT.</h2>
+          <p>From long-term planning to the issue that needs fixed today, Brantlab brings the right level of support without unnecessary complexity.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card reveal"><span class="card-number">01</span><div class="service-icon">⌁</div><h3>IT Strategy</h3><p>Technology roadmaps, budgeting, vendor guidance, and practical planning aligned to your business goals.</p><ul><li>Strategic planning</li><li>Digital transformation</li><li>Compliance guidance</li></ul></article>
+          <article class="service-card reveal"><span class="card-number">02</span><div class="service-icon">⬡</div><h3>Infrastructure & Cloud</h3><p>Reliable systems built to keep your team productive, secure, and ready to grow.</p><ul><li>Cloud solutions</li><li>System integration</li><li>Infrastructure management</li></ul></article>
+          <article class="service-card reveal"><span class="card-number">03</span><div class="service-icon">◇</div><h3>Security & Continuity</h3><p>Pragmatic safeguards that reduce risk and help your organization recover when the unexpected happens.</p><ul><li>Cybersecurity consulting</li><li>Business continuity</li><li>Data protection</li></ul></article>
+          <article class="service-card reveal"><span class="card-number">04</span><div class="service-icon">↗</div><h3>Support & Training</h3><p>Responsive help for your people, backed by clear communication and useful training.</p><ul><li>Technical support</li><li>Team training</li><li>Data and reporting</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container about-layout">
+        <div class="portrait-wrap reveal"><div class="portrait-frame"><img src="{{ "assets/justin-brant.png" | relURL }}" alt="Justin Brant, founder of Brantlab" width="600" height="600"></div><p class="portrait-caption"><span>Based in</span> Northwest Ohio</p></div>
+        <div class="about-copy reveal">
+          <p class="eyebrow"><span></span> Meet your consultant</p>
+          <h2>Experienced guidance.<br><em>Personal attention.</em></h2>
+          <p class="lead">I’m Justin Brant, an IT professional with more than 12 years of experience spanning frontline support, systems administration, and datacenter operations.</p>
+          <p>I started Brantlab to give organizations something that can be hard to find: senior-level technical experience with a direct, human relationship. I take time to understand the business behind the technology, explain options clearly, and build solutions that last.</p>
+          <div class="principles"><div><span>01</span><p><strong>Listen first</strong>Understand the real problem before recommending a tool.</p></div><div><span>02</span><p><strong>Keep it clear</strong>Communicate plainly so you can make confident decisions.</p></div><div><span>03</span><p><strong>Build for tomorrow</strong>Solve today’s need without creating tomorrow’s headache.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section support" id="support">
+      <div class="container">
+        <div class="support-panel reveal">
+          <div><p class="eyebrow light"><span></span> Already a client?</p><h2>Get help. Stay informed.</h2><p>Submit a new request by email or use the client portal to review tickets and invoices in one place.</p></div>
+          <div class="support-actions"><a class="support-link" href="mailto:help@brantlab.com"><span class="link-icon">@</span><span><small>Open a support ticket</small>help@brantlab.com</span><b>↗</b></a><a class="support-link" href="https://portal.brantlab.com/client/login.php"><span class="link-icon">⌘</span><span><small>Tickets & invoices</small>Client portal</span><b>↗</b></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-inner reveal">
+        <p class="eyebrow"><span></span> Let’s work together</p>
+        <h2>Have a technology challenge?<br><em>Let’s solve it.</em></h2>
+        <p>Tell me what’s getting in the way. You’ll hear directly from me—no sales queue, no runaround.</p>
+        <a class="email-link" href="mailto:contact@brantlab.com">contact@brantlab.com <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-layout"><a class="brand" href="#top"><img src="{{ "assets/logo-only.png" | relURL }}" alt="" width="38" height="38"><span>BRANTLAB</span></a><p>Practical IT consulting for modern business.</p><div><a href="{{ "privacy/" | relURL }}">Privacy</a><span>© {{ now.Year }} Brantlab</span></div></div></footer>
+</body>
+</html>
