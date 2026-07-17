@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="{{ .Site.Language.LanguageCode | default "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ .Description | default .Site.Params.description }}">
+  <meta name="theme-color" content="#0b0b0d">
+  <title>{{ .Title }} · {{ .Site.Title }}</title>
+  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="icon" href="{{ "assets/favicon-32x32.png" | relURL }}" sizes="32x32">
+  {{ $styles := resources.Get "css/styles.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+  {{ $scale := resources.Get "css/scale.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $scale.RelPermalink }}" integrity="{{ $scale.Data.Integrity }}">
+  <style>.policy-header{background:#0c0c0f;color:#fff;padding:2rem 0}.policy-header .container{display:flex;justify-content:space-between;align-items:center}.policy-main{max-width:800px;padding:6rem var(--pad)}.policy-main h1{font:500 clamp(2.8rem,6vw,5rem)/1 'Space Grotesk';letter-spacing:-.05em;margin:.5rem 0 1rem}.policy-main h2{font:600 1.45rem/1.2 'Space Grotesk';letter-spacing:-.02em;margin:3rem 0 1rem}.policy-main p,.policy-main li{color:#55555d}.policy-main a{color:#c51220;text-decoration:underline}.back-link{font-size:.85rem;color:#bbb}.back-link:hover{color:#fff}</style>
+</head>
+<body>
+  <header class="policy-header"><div class="container"><a class="brand" href="{{ "/" | relURL }}"><img src="{{ "assets/logo-only.png" | relURL }}" alt="" width="42" height="42"><span>BRANTLAB</span></a><a class="back-link" href="{{ "/" | relURL }}">← Back to site</a></div></header>
+  <main class="container policy-main"><p class="eyebrow"><span></span> Legal</p><h1>{{ .Title }}</h1>{{ with .Date }}<p><strong>Effective date:</strong> {{ .Format "January 2, 2006" }}</p>{{ end }}{{ .Content }}</main>
+  <footer class="site-footer"><div class="container footer-layout"><a class="brand" href="{{ "/" | relURL }}"><img src="{{ "assets/logo-only.png" | relURL }}" alt="" width="38" height="38"><span>BRANTLAB</span></a><p>Practical IT consulting for modern business.</p><div><span>© {{ now.Year }} Brantlab</span></div></div></footer>
+</body>
+</html>

@@ -1,10 +1,9 @@
 ---
 title: "Privacy Policy for Notary Jotter"
-weight: 4
-header_menu: false
+description: "Privacy Policy for Notary Jotter by Brantlab"
+date: 2026-07-10
+layout: "single"
 ---
-
-Effective Date: July 10, 2026
 
 Notary Jotter is a digital notary journal app provided by Brantlab and designed to help users create, manage, back up, and review notary journal records.
 
@@ -89,8 +88,8 @@ Because Brantlab does not store your journal records on its servers, Brantlab ca
 If you have questions about this Privacy Policy, contact:
 
 Brantlab  
-Contact@brantlab.com  
-https://brantlab.com
+[contact@brantlab.com](mailto:contact@brantlab.com)  
+[https://brantlab.com](https://brantlab.com)
 
 ## Changes to This Policy
 

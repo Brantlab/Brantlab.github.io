@@ -1,0 +1,14 @@
+baseURL = "https://brantlab.com/"
+languageCode = "en-us"
+title = "Brantlab IT Consulting"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[params]
+  description = "Practical IT consulting, cybersecurity, cloud, infrastructure, and support for businesses in Northwest Ohio."
+
+[minify]
+  minifyOutput = true
+
+[markup.goldmark.renderer]
+  unsafe = false
